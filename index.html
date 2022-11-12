@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griddr</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: .2rem;
+            height: 100%;
+        }
+
+        select {
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+        }
+
+        main {
+            height: 100%;
+            display: grid;
+            border: 1px solid #aaa;
+            border-radius: .3rem;
+        }
+
+        select[value="vertical"]~main {}
+
+        select[value="horizontal"]~main {}
+    </style>
+</head>
+
+<body>
+    <select id="layout" value="vertical" onchange="this.setAttribute('value', this.value);">
+        <option value="vertical">Vertical</option>
+        <option value="horizontal">Horizontal</option>
+    </select>
+    <main>
+        <div>hey</div>
+        <div>ho</div>
+    </main>
+</body>
+
+</html>
