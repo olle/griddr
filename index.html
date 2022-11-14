@@ -13,9 +13,9 @@
 
         html,
         body {
+            height: 100vh;
             margin: 0;
-            padding: .2rem;
-            height: 100%;
+            padding: 0;
         }
 
         select {
@@ -27,13 +27,26 @@
         main {
             height: 100%;
             display: grid;
-            border: 1px solid #aaa;
             border-radius: .3rem;
         }
 
-        select[value="vertical"]~main {}
+        .griddr {
+            display: grid;
+        }
 
-        select[value="horizontal"]~main {}
+        select[value="vertical"]~.griddr {
+            grid-template-columns: 1fr 1fr;
+        }
+
+
+        select[value="horizontal"]~.griddr {
+            grid-template-rows: 1fr 1fr;
+        }
+
+        select[value="horizontal"]~.griddr>*:nth-child(n+3),
+        select[value="vertical"]~.griddr>*:nth-child(n+3) {
+            display: none;
+        }
     </style>
 </head>
 
@@ -42,9 +55,11 @@
         <option value="vertical">Vertical</option>
         <option value="horizontal">Horizontal</option>
     </select>
-    <main>
-        <div>hey</div>
-        <div>ho</div>
+    <main class="griddr">
+        <section style="background: lightblue;"></section>
+        <section style="background: lightgreen;"></section>
+        <section style="background: lightcyan;"></section>
+        <section style="background: lightgoldenrodyellow;"></section>
     </main>
 </body>
 
