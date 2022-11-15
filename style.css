@@ -70,11 +70,8 @@ main {
 }
 
 .grid.grid-vertical > *:nth-child(2),
-.grid.grid-vertical > *:nth-child(3) {
-  display: initial;
-}
-
 .grid.grid-horizontal > *:nth-child(2),
+.grid.grid-vertical > *:nth-child(3),
 .grid.grid-horizontal > *:nth-child(3) {
   display: initial;
 }
