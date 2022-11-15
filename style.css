@@ -35,6 +35,9 @@ main {
 .grid.grid-vertical.grid-r-aside {
   grid-template-columns: 2.5fr 2.5fr 1fr;
 }
+.grid.grid-vertical.grid.grid-both-aside {
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
 
 .grid.grid-horizontal {
   grid-template-rows: 1fr 1fr;
