@@ -34,9 +34,9 @@ drop-down selection changes the CSS classes and the layout changes to provide:
 **vertical split**, **horizontal split**, **left or right aside** as well as
 **aside on both sides** with either horizontal or vertical splits. This can be
 used as the base for a page-layout, either server-side rendered (the good old
-way), or for an SPA with micro-frontends, that mount and unmount, as the grid
-changes. It's just an experiment, but perhaps it can serve as inspiration to
-someone, to take it further.
+way), or for an SPA with micro-frontends that mounts, and unmounts, as the grid
+changes. It's just an experiment, but perhaps it can serve as inspiration for
+someone to take it further.
 
 CSS Grid, is amazing!
 
