@@ -2,7 +2,7 @@
 
 CSS Grid, is amazing!
 
-## It rubs itself with `TABLE`, or else it get's the hose again.
+## It rubs itself with `TABLE`, or else it gets the hose again.
 
 When I started in web development, around 1997/1998, the only few ways to
 create page layouts were either to admit defeat and just `<CENTER>`
