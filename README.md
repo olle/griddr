@@ -14,7 +14,7 @@ create amazing digital masonry, and it actually worked. We didn't know anything
 else and used what we had in creative ways.
 
 I can vividly remember that alignment was hard if not impossible and
-padding/margin and borders, really made the job hard. In order to align and
+padding/margin and borders, really made the job difficult. In order to align and
 float content, you had to resort to using hacks like `trans.gif`, a 1x1
 transparent GIF, together with `width` or `height` attributes in order to
 stretch out cells where needed. I remember doing a left sidebar layout,
