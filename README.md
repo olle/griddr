@@ -1,6 +1,6 @@
 # Griddr
 
-CSS Grid, is amazing!
+A simple 2-4 panel dynamic grid layout demo.
 
 ## It rubs itself with `TABLE`, or else it gets the hose again.
 
