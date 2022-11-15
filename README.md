@@ -2,6 +2,8 @@
 
 A simple 2-4 panel dynamic grid layout demo.
 
+https://olle.github.io/griddr/
+
 ## It rubs itself with `TABLE`, or else it gets the hose again.
 
 When I started in web development, around 1997/1998, the only few ways to
