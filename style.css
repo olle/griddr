@@ -30,15 +30,16 @@ main {
 .grid.grid-vertical {
   grid-template-columns: 1fr 1fr;
 }
-
 .grid.grid-vertical.grid-l-aside {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.grid.grid-vertical.grid-r-aside {
+  grid-template-columns: 2fr 2fr 1fr;
 }
 
 .grid.grid-horizontal {
   grid-template-rows: 1fr 1fr;
 }
-
 .grid.grid-horizontal.grid-l-aside {
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 1fr;
