@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+select {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+main {
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid > * {
+  display: none;
+}
+
+.grid.grid-vertical {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid.grid-vertical.grid-l-aside {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.grid.grid-horizontal {
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid.grid-horizontal.grid-l-aside {
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
+}
+.grid.grid-horizontal.grid-r-aside {
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid.grid-horizontal.grid-l-aside > *:nth-child(1) {
+  grid-row: 1 / 3;
+}
+.grid.grid-horizontal.grid-r-aside > *:nth-child(4) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.grid.grid-vertical > *:nth-child(2),
+.grid.grid-vertical > *:nth-child(3) {
+  display: initial;
+}
+
+.grid.grid-horizontal > *:nth-child(2),
+.grid.grid-horizontal > *:nth-child(3) {
+  display: initial;
+}
+
+.grid.grid-l-aside > *:nth-child(1) {
+  display: initial;
+}
+.grid.grid-r-aside > *:nth-child(4) {
+  display: initial;
+}
